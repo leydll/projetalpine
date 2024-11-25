@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Application de vente en ligne" />
+    <meta name="author" content="Leïla Diallo" />
+    <meta name="keywords" content="makeup, France, skincare" />
+    <meta name="robots" content="index,follow" />
+    <title>Cult Beauty</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1b1fa6fbda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/alpine.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_gauche">
+        <a href="index.html" class="navbar_logo">Cult Beauty</a>
+      </div>
+      <div class="navbar_droite">
+        <a href="signup.html">Inscription</a>
+      </div>
+    </nav>
+    <main x-data="login">
+      <h1>Connexion au formulaire</h1>
+      <form @submit.prevent="submitHandler">
+        <section class="form__fields">
+          <template x-for="(field, index) in fields" :key="index">
+            <article class="field">
+              <label :for="field.name" x-text="field.placeholder"></label>
+              <div class="input-wrapper">
+                <i
+                  :class="`fa-solid ${
+                    field.name === 'email' ? 'fa-envelope' : 'fa-lock'
+                  }`"
+                ></i>
+                <input
+                  class="input"
+                  :id="field.name"
+                  :type="field.type"
+                  :placeholder="field.placeholder"
+                  x-model="field.value"
+                />
+              </div>
+            </article>
+          </template>
+        </section>
+        <section class="form__buttons">
+          <button class="button" type="submit">Valider</button>
+        </section>
+      </form>
+
+      <a href="signup.html" class="button-link">
+        Pas encore inscrit(e) ? Cliquez ici
+      </a>
+      <template x-if="showPopup">
+        <div class="popup" x-show="showPopup" x-transition>
+          <p x-text="popupMessage"></p>
+        </div>
+      </template>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

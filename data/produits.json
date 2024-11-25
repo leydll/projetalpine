@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Crème hydratante",
+    "category": "skincare",
+    "price": 25,
+    "description": "Crème hydratante pour peaux sèches."
+  },
+  {
+    "name": "Sérum anti-âge",
+    "category": "skincare",
+    "price": 50,
+    "description": "Sérum pour réduire les rides et ridules."
+  },
+  {
+    "name": "Masque hydratant",
+    "category": "skincare",
+    "price": 35,
+    "description": "Masque en tissu hydratant pour peau sèche."
+  },
+  {
+    "name": "Sérum éclat",
+    "category": "skincare",
+    "price": 40,
+    "description": "Sérum éclaircissant pour un teint lumineux."
+  },
+  {
+    "name": "Crème solaire SPF 50",
+    "category": "skincare",
+    "price": 28,
+    "description": "Crème solaire haute protection pour peau sensible."
+  },
+  {
+    "name": "Shampoing réparateur",
+    "category": "haircare",
+    "price": 20,
+    "description": "Shampoing réparateur pour cheveux abîmés."
+  },
+  {
+    "name": "Après-shampoing hydratant",
+    "category": "haircare",
+    "price": 18,
+    "description": "Après-shampoing pour des cheveux doux et brillants."
+  },
+  {
+    "name": "Huile capillaire",
+    "category": "haircare",
+    "price": 25,
+    "description": "Huile nourrissante pour cheveux secs."
+  },
+  {
+    "name": "Spray texturisant",
+    "category": "haircare",
+    "price": 22,
+    "description": "Spray pour donner du volume et de la texture aux cheveux."
+  },
+  {
+    "name": "Masque capillaire",
+    "category": "haircare",
+    "price": 30,
+    "description": "Masque intensif pour cheveux très secs."
+  },
+  {
+    "name": "Lait corporel nourrissant",
+    "category": "bodycare",
+    "price": 15,
+    "description": "Lait corporel pour hydrater la peau sèche."
+  },
+  {
+    "name": "Exfoliant corporel",
+    "category": "bodycare",
+    "price": 20,
+    "description": "Gommage pour une peau douce et éclatante."
+  },
+  {
+    "name": "Gel douche relaxant",
+    "category": "bodycare",
+    "price": 12,
+    "description": "Gel douche avec des huiles essentielles apaisantes."
+  },
+  {
+    "name": "Crème pour les mains",
+    "category": "bodycare",
+    "price": 8,
+    "description": "Crème pour hydrater et protéger les mains."
+  },
+  {
+    "name": "Baume pour les pieds",
+    "category": "bodycare",
+    "price": 14,
+    "description": "Baume réparateur pour pieds secs et abîmés."
+  },
+  {
+    "name": "Fond de teint longue tenue",
+    "category": "makeup",
+    "price": 30,
+    "description": "Fond de teint couvrant et résistant toute la journée."
+  },
+  {
+    "name": "Palette de fards à paupières",
+    "category": "makeup",
+    "price": 45,
+    "description": "Palette de 12 couleurs pour des looks variés."
+  },
+  {
+    "name": "Mascara volume intense",
+    "category": "makeup",
+    "price": 18,
+    "description": "Mascara pour des cils plus épais et plus longs."
+  },
+  {
+    "name": "Blush poudre",
+    "category": "makeup",
+    "price": 22,
+    "description": "Blush pour un effet bonne mine naturel."
+  },
+  {
+    "name": "Rouge à lèvres hydratant",
+    "category": "makeup",
+    "price": 15,
+    "description": "Rouge à lèvres avec une formule hydratante."
+  },
+  {
+    "name": "Pinceau à maquillage",
+    "category": "accessoire",
+    "price": 10,
+    "description": "Pinceau pour appliquer fond de teint ou poudre."
+  },
+  {
+    "name": "Éponge à maquillage",
+    "category": "accessoire",
+    "price": 8,
+    "description": "Éponge pour un teint uniforme et sans trace."
+  },
+  {
+    "name": "Trousse de maquillage",
+    "category": "accessoire",
+    "price": 20,
+    "description": "Trousse pour ranger vos essentiels de beauté."
+  },
+  {
+    "name": "Peigne démêlant",
+    "category": "accessoire",
+    "price": 5,
+    "description": "Peigne pour démêler les cheveux sans les casser."
+  },
+  {
+    "name": "Lime à ongles",
+    "category": "accessoire",
+    "price": 3,
+    "description": "Lime pour des ongles parfaitement limés."
+  },
+  {
+    "name": "Eau de parfum Jasmin",
+    "category": "parfum",
+    "price": 60,
+    "description": "Un parfum floral délicat au jasmin."
+  },
+  {
+    "name": "Eau de toilette Musc Blanc",
+    "category": "parfum",
+    "price": 40,
+    "description": "Une fragrance légère et apaisante."
+  },
+  {
+    "name": "Brume corporelle Vanille",
+    "category": "parfum",
+    "price": 25,
+    "description": "Brume douce pour parfumer votre corps."
+  },
+  {
+    "name": "Déodorant naturel",
+    "category": "bodycare",
+    "price": 12,
+    "description": "Déodorant à base d'ingrédients naturels."
+  },
+  {
+    "name": "Huile sèche illuminatrice",
+    "category": "bodycare",
+    "price": 18,
+    "description": "Huile pour hydrater et illuminer la peau."
+  },
+  {
+    "name": "Crème de nuit régénérante",
+    "category": "skincare",
+    "price": 45,
+    "description": "Crème pour favoriser la régénération cellulaire pendant la nuit."
+  },
+  {
+    "name": "Tonique purifiant",
+    "category": "skincare",
+    "price": 20,
+    "description": "Tonique pour nettoyer et resserrer les pores."
+  },
+  {
+    "name": "Crème contour des yeux",
+    "category": "skincare",
+    "price": 35,
+    "description": "Crème pour réduire les cernes et poches."
+  },
+  {
+    "name": "Gloss brillant",
+    "category": "makeup",
+    "price": 12,
+    "description": "Gloss pour des lèvres brillantes et hydratées."
+  },
+  {
+    "name": "Highlighter poudre",
+    "category": "makeup",
+    "price": 25,
+    "description": "Highlighter pour illuminer les zones du visage."
+  },
+  {
+    "name": "Crayon pour les sourcils",
+    "category": "makeup",
+    "price": 14,
+    "description": "Crayon pour définir et remplir les sourcils."
+  },
+  {
+    "name": "Base de maquillage",
+    "category": "makeup",
+    "price": 28,
+    "description": "Base pour lisser la peau et prolonger la tenue du maquillage."
+  },
+  {
+    "name": "Correcteur anti-cernes",
+    "category": "makeup",
+    "price": 20,
+    "description": "Correcteur pour dissimuler cernes et imperfections."
+  },
+  {
+    "name": "Peeling enzymatique",
+    "category": "skincare",
+    "price": 30,
+    "description": "Peeling doux pour une exfoliation en douceur."
+  },
+  {
+    "name": "Parfum pour cheveux",
+    "category": "parfum",
+    "price": 35,
+    "description": "Parfum léger conçu pour les cheveux."
+  },
+  {
+    "name": "Savon exfoliant au charbon",
+    "category": "bodycare",
+    "price": 15,
+    "description": "Savon pour nettoyer en profondeur et exfolier la peau."
+  },
+  {
+    "name": "Baume à lèvres réparateur",
+    "category": "bodycare",
+    "price": 7,
+    "description": "Baume pour hydrater et réparer les lèvres sèches."
+  },
+  {
+    "name": "Rouge à lèvres mat longue tenue",
+    "category": "makeup",
+    "price": 20,
+    "description": "Rouge à lèvres mat avec une tenue impeccable."
+  },
+  {
+    "name": "Crème exfoliante pour le visage",
+    "category": "skincare",
+    "price": 27,
+    "description": "Crème pour exfolier la peau en douceur."
+  },
+  {
+    "name": "Coffret parfum et lotion",
+    "category": "parfum",
+    "price": 75,
+    "description": "Un coffret comprenant un parfum et une lotion assortie."
+  }
+]

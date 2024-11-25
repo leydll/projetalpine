@@ -1,0 +1,32 @@
+[
+  {
+    "name": "email",
+    "type": "email",
+    "placeholder": "Entrez votre email",
+    "value": ""
+  },
+  {
+    "name": "password",
+    "type": "password",
+    "placeholder": "Entrez votre mot de passe",
+    "value": ""
+  },
+  {
+    "name": "nom",
+    "type": "text",
+    "placeholder": "Nom",
+    "value": ""
+  },
+  {
+    "name": "prénom",
+    "type": "text",
+    "placeholder": "Prénom",
+    "value": ""
+  },
+  {
+    "name": "nomUtilisateur",
+    "type": "text",
+    "placeholder": "Nom d'utilisateur",
+    "value": ""
+  }
+]

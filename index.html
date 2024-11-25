@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Application de vente en ligne" />
+    <meta name="author" content="Leïla Diallo" />
+    <meta name="keywords" content="makeup, France, skincare" />
+    <meta name="robots" content="index,follow" />
+    <title>Cult Beauty</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1b1fa6fbda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/alpine.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar" x-data="logoutContainer()">
+      <div class="navbar_gauche">
+        <a href="index.html" class="navbar_logo">Cult Beauty</a>
+      </div>
+      <div class="navbar_droite">
+        <!-- "se déconnecter" si l'utilisateur est connecté -->
+        <template x-if="isLoggedIn">
+          <button @click="logout">Se déconnecter</button>
+        </template>
+        <!-- 
+        "se connecter" si l'utilisateur n'est pas connecté -->
+        <template x-if="!isLoggedIn">
+          <a href="login.html">Se connecter</a>
+        </template>
+      </div>
+    </nav>
+    <div x-data="ProductList()" x-init="init()">
+      <header>
+        <h1>Catalogue des Produits</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Rechercher des produits..."
+            x-model="searchTerm"
+            @input="searchProducts()"
+          />
+          <button class="search-button">
+            <i class="fa fa-search"></i> Rechercher
+          </button>
+        </div>
+      </header>
+      <section>
+        <select x-model="selectedCategory" @change="filterByCategory()">
+          <option value="all">Toutes les catégories</option>
+          <option value="skincare">SkinCare</option>
+          <option value="makeup">Makeup</option>
+          <option value="haircare">Hair Care</option>
+        </select>
+      </section>
+      <section>
+        <div class="product-list">
+          <template
+            x-for="(product, index) in paginate(filteredProducts, currentPage, pageSize)"
+            :key="index"
+          >
+            <div class="product-item">
+              <h3 x-text="product.name"></h3>
+              <p x-text="product.description"></p>
+              <span x-text="product.price"></span>
+            </div>
+          </template>
+        </div>
+      </section>
+      <section class="pagination">
+        <button
+          @click="changePage(currentPage - 1)"
+          :disabled="currentPage === 1"
+        >
+          Précédent
+        </button>
+        <span x-text="currentPage"></span> / <span x-text="totalPages"></span>
+        <button
+          @click="changePage(currentPage + 1)"
+          :disabled="currentPage === totalPages"
+        >
+          Suivant
+        </button>
+      </section>
+    </div>
+    <script src="main.js" type="module" defer></script>
+  </body>
+</html>
